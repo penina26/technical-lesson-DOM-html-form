@@ -1,0 +1,116 @@
+/* 1. General Body Tweaks */
+body {
+    background-color: #f9fafb;
+    /* Light grey background to make white cards pop */
+    margin: 0;
+    padding-bottom: 50px;
+    /* Space at the bottom */
+}
+
+/* 2. Heading / Navbar Area */
+.heading {
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    /* Subtle shadow under header */
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+/* 3. The Shopping List */
+/* Semantic UI handles the structure, but let's make the text nicer */
+#cart .item {
+    padding: 15px 10px !important;
+    /* !important ensures we override Semantic UI defaults if needed */
+    font-size: 1.1rem;
+    color: #444;
+    display: flex;
+    justify-content: flex-start;
+
+    align-items: left;
+}
+
+#cart .item:hover {
+    background-color: #f4f4f4;
+    /* Highlight item on hover */
+}
+
+/* 4. Form Container - Centering it nicely */
+#form-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+/* 5. The "Add New Item" Form Card */
+#new-cart-item-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    /* Card shadow */
+    width: 100%;
+    max-width: 400px;
+    /* Prevents it from getting too wide */
+    border-top: 5px solid #2185d0;
+    /* Blue line at top matching the cart icon */
+}
+
+/* 6. Form Typography */
+#new-cart-item-form h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#new-cart-item-form label {
+    font-weight: bold;
+    color: #555;
+    display: block;
+    /* Forces label to its own line */
+    margin-bottom: 5px;
+}
+
+/* 7. Form Inputs */
+#new-cart-item-form input[type="text"],
+#new-cart-item-form input[type="number"] {
+    width: 100%;
+    /* Full width of the card */
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Ensures padding doesn't break width */
+    font-size: 1rem;
+}
+
+#new-cart-item-form input[type="text"]:focus,
+#new-cart-item-form input[type="number"]:focus {
+    border-color: #2185d0;
+    outline: none;
+}
+
+/* 8. Submit Button */
+#new-cart-item-form input[type="submit"] {
+    width: 100%;
+    background-color: #2185d0;
+    /* Semantic UI Blue */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#new-cart-item-form input[type="submit"]:hover {
+    background-color: #1678c2;
+    /* Darker blue on hover */
+}
